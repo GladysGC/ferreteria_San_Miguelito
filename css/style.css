@@ -1,0 +1,37 @@
+
+:root {
+    --marron: #a88914;
+    --verde1: #91a566;
+    --verde2: #bed084;
+    --redondeado: 0.8em;
+    --paddingbasico: 1em;
+    --border-rad: 7px;
+    --border-styl: none;
+    --sombreado: 2px 5px 5px #999;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header,
+  nav {
+    height: 6rem;
+    width: 100%;
+  }
+  
+  .imgContainer {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .imgContainer > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
