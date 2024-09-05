@@ -21,40 +21,39 @@
     <header>
         <nav>
             <div class="imgContainer">
-                <img src="./img/" alt="Logo">
-                <h1>Pet Palace</h1>
+                <img src="./img/logo.jpg" alt="Logo">
+                <!-- <h1>Ferreteria San Miguelito</h1> -->
             </div>
 
             <ul>
-                <li><a href="#">Perros <i class="fa-solid fa-paw" style="color: #000000;"></i></a>
+                <li><a href="#">FERRETERÍA </a>
                     <ul class="submenu">
-                        <li><a href="#">Com</a></li>
+                        <li><a href="#">HERRAMIENTAS ELECTRICAS</a></li>
+                        <li><a href="#">Accessorios</a></li>
+                        <li><a href="#">HERRAMIENTAS GENERAL</a></li>
+                        <li><a href="#">Marcas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">HOGAR </i></a>
+                    <ul class="submenu">
+                        <li><a href="#">FREGADERO</a></li>
                         <li><a href="#">Accessorios</a></li>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Marcas</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Gatos <i class="fa-solid fa-paw" style="color: #000000;"></i></a>
+                <li><a href="#">CONSTRUCCION </a>
                     <ul class="submenu">
-                        <li><a href="#">Com</a></li>
-                        <li><a href="#">Accessorios</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Marcas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Otros animales <i class="fa-solid fa-paw" style="color: #000000;"></i></a>
-                    <ul class="submenu">
-                        <li><a href="#" class="submenuDespl">HHHHH <i class="fa-solid fa-caret-right"
+                        <li><a href="#" class="submenuDespl">MATERIALES DE CONSTRUCCION <i class="fa-solid fa-caret-right"
                                     style="color: #000000;"></i></a>
                             <ul class="submenuSecondLevel" id="submenuHamsters">
-                                <li><a href="#">Com</a></li>
-                                <li><a href="#">Accessorios</a></li>
+                                <li><a href="#">Techos</a></li>
+                                <li><a href="#">paLa</a></li>
                                 <li><a href="#">Servicios</a></li>
                                 <li><a href="#">Marcas</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="submenuDespl">LLLL <i class="fa-solid fa-caret-right"
-                                    style="color: #000000;"></i></a>
+                        <li><a href="#" class="submenuDespl">FONTANERÍA </a>
                             <ul class="submenuSecondLevel" id="submenuParrots">
                                 <li><a href="#">Com</a></li>
                                 <li><a href="#">Accessorios</a></li>
@@ -62,7 +61,7 @@
                                 <li><a href="#">Marcas</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="submenuDespl">PPPP <i class="fa-solid fa-caret-right"
+                        <!-- <li><a href="#" class="submenuDespl">PPPP <i class="fa-solid fa-caret-right"
                                     style="color: #000000;"></i></a>
                             <ul class="submenuSecondLevel" id="submenuFish">
                                 <li><a href="#">Com</a></li>
@@ -70,16 +69,32 @@
                                 <li><a href="#">Servicios</a></li>
                                 <li><a href="#">Marcas</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
-                </li>
-                <li class="hidden"><a href="#">Marcas </a></li>
-                <li class="hidden"><a href="#">Servicios </a>
-                </li>
-                <li class="hidden"><a href="#">Nosotros <i class="fa-solid fa-paw" style="color: #000000;"></i></a></li>
+                
+                <li class="hidden"><a href="#">NUESTRO LOCAL</a></li>
+                <li class="hidden"><a href="#">CONTACTO </a>
             </ul>
 
             <input type="text" name="searchbar" id="searchbar" placeholder="Buscar...">
+            <!-- carrito -->
+            <div class="header-section container">
+                <div>
+                    <img onclick="showCart(this)" class="cart" src="recursos/cart-shopping-solid.svg" alt="">
+                    <p class="count-product">0</p>
+                </div>
+                <div class="cart-products" id="products-id">
+                    <p class="close-btn" onclick="closeBtn()">X</p>
+                    <h3>Mi carrito</h3>
+                    <div class="card-items">
+                </div>
+                <div class="toPay">
+                    <h2>Total:  <strong class="price-total">0</strong>€</h2>
+                    <a class="btnPagar"
+                    href="">Pagar</a>
+                </div>
+            </div>
+            <!-- AAAAAA -->
         </nav>
     </header>
     <!-- Banner -->
@@ -91,7 +106,7 @@
             <input type="radio" name="radio-buttons" id="img-1" checked />
             <li class="slide-container">
                 <div class="slide-image">
-                    <img src=".\img\Peluqueria.png">
+                    <img src="./img/tienda.jpg">
                     <!-- <div class="center">Servicios</div> -->
                 </div>
                 <div class="carousel-controls">
@@ -188,8 +203,8 @@
     <!--Productos-->
 
     <section class="products">
-        <h2>PRODUCTOS</h2>
-        <p>Lorem ipsum</p>
+        <h2>DESCUBRE NUESTROS NUEVOS PRODUCTOS</h2>
+        <p>Herramientas de jardín, poda y más</p>
         <div>
             <div>
                 <img src="img/61YhSf-i7rL._AC_SX466_.jpg" alt="" />
@@ -206,7 +221,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$5</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i> Comprar</button>
+                    <button> Comprar</button>
                 </div>
 
             </div>
@@ -215,7 +230,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$100</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i> Comprar</button>
+                    <button> Comprar</button>
                 </div>
 
             </div>
@@ -224,7 +239,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$12</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i> Comprar</button>
+                    <button> Comprar</button>
                 </div>
 
             </div>
@@ -233,7 +248,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$22</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i> Comprar</button>
+                    <button> Comprar</button>
                 </div>
 
             </div>
@@ -242,7 +257,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$10</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i> Comprar</button>
+                    <button>Comprar</button>
                 </div>
 
             </div>
@@ -259,7 +274,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$25</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i>Comprar</button>
+                    <button></i>Comprar</button>
                 </div>
 
             </div>
@@ -268,7 +283,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$50</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i>Comprar</button>
+                    <button>Comprar</button>
                 </div>
 
             </div>
@@ -277,7 +292,7 @@
                 <div>
                     <h3></h3>
                     <p class="precio">$100</p>
-                    <button><i class="fa-solid fa-paw" style="color: #000000;"></i>Comprar</button>
+                    <button>Comprar</button>
                 </div>
 
             </div>
@@ -315,7 +330,7 @@
 
             <label class="label" for="com">Comentario:</label>
             <textarea class="input" name="comentario" -cols="50" rows="3" id="com"></textarea>
-            <button type="submit"><i class="fa-solid fa-paw" style="color: #000000;"></i> Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
     </section>
     <!-- Nosotros -->
